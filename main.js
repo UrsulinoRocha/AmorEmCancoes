@@ -70,40 +70,40 @@ progressContainer.addEventListener("click", (e) => {
 
 function music1(){
   cardMusic.style.display = 'flex'
-  musicName.innerHTML = 'Reflections'
+  musicName.innerHTML = 'Eu Creio nas Promessas de Deus'
   albumPhoto.src = "./img/capa.png"
-  album.innerHTML = 'Hard To Imagine The Neighbourhood <br> Ever Changing'
-  music.src = "./src/10 The Neighbourhood - Reflections.mp3"
+  album.innerHTML = 'Padre Marcelo Rossi<br>'
+  music.src = "./src/Creio nas promessas de Deus.mp3"
   music.play() 
   playBtn.style.display = "none";
   pauseBtn.style.display = "block";
 }
 function music2(){
   cardMusic.style.display = 'flex'
-  musicName.innerHTML = 'Daddy Issues <span class="paragrafoCard">Remix</span>'
-  album.innerHTML = 'Daddy Issues Remix'
+  musicName.innerHTML = 'Cheiro de rosas">Remix</span>'
+  album.innerHTML = 'Colo de Deus'
   albumPhoto.src = "./img/capa.png"
-  music.src = "./src/The Neighbourhood - Daddy Issues (Remix).mp3"
+  music.src = "./src/Cheiro de rosas.mp3"
   music.play()  
   playBtn.style.display = "none";
   pauseBtn.style.display = "block";
 }
 function music3(){
   cardMusic.style.display = 'flex'
-  musicName.innerHTML = 'Softcore'
+  musicName.innerHTML = 'Simplesmente José'
   albumPhoto.src = "./img/capa.png"
-  album.innerHTML = 'Hard To Imagine The Neighbourhood <br> Ever Changing'
-  music.src = "./src/05 The Neighbourhood - Softcore.mp3"
+  album.innerHTML = 'Eugênio Jorge<br>'
+  music.src = "./src/Simplesmente José.mp3"
   music.play() 
   playBtn.style.display = "none";
   pauseBtn.style.display = "block";
 }
 function music4(){
   cardMusic.style.display = 'flex'
-  musicName.innerHTML = 'You Get Me So High'
-  album.innerHTML = 'Hard To Imagine The Neighbourhood <br> Ever Changing'
+  musicName.innerHTML = 'Jesus meu esposo'
+  album.innerHTML = 'Colo de Deus'
   albumPhoto.src = "./img/capa.png"
-  music.src = "./src/09 The Neighbourhood - You Get Me So High.mp3"
+  music.src = "./src/Jesus meu esposo.mp3"
   music.play() 
   playBtn.style.display = "none";
   pauseBtn.style.display = "block";
@@ -126,7 +126,7 @@ function video1(){
   cardMusic.style.display = 'none'
   videoPlayer.style.display = 'flex'
   body.style.overflow = 'hidden'
-  video.src = "./img/Creio nas promessas de Deus.mp4"
+  video.src = "./src/Creio nas promessas de Deus.mp4"
 
 }
 function video2(){
@@ -135,7 +135,7 @@ function video2(){
   cardMusic.style.display = 'none'
   videoPlayer.style.display = 'flex'
   body.style.overflow = 'hidden'
-  video.src = "./img/Creio nas promessas de Deus.mp4"
+  video.src = "./src/Cheiro de rosas.mp4"
 }
 function video3(){
   window.scrollTo(0, document.body.scrollHeight);
@@ -143,7 +143,7 @@ function video3(){
   cardMusic.style.display = 'none'
   videoPlayer.style.display = 'flex'
   body.style.overflow = 'hidden'
-  video.src = "./img/Creio nas promessas de Deus.mp4"
+  video.src = "./src/Simplesmente José.mp4"
 }
 function video4(){
   window.scrollTo(0, document.body.scrollHeight);
@@ -151,7 +151,7 @@ function video4(){
   cardMusic.style.display = 'none'
   videoPlayer.style.display = 'flex'
   body.style.overflow = 'hidden'
-  video.src = "./img/Creio nas promessas de Deus.mp4"
+  video.src = "./src/Jesus meu esposo.mp4"
   //video.src = 'https://www.instagram.com/reel/DJjI6jPuIIl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
 }
 
@@ -163,3 +163,4 @@ closeMusicBtn.addEventListener("click", () => {
   playBtn.style.display = "block";
   pauseBtn.style.display = "none";
 });
+

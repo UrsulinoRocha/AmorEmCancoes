@@ -72,10 +72,35 @@
         }
     }
 
-    .cardVideoPlayer {
-        width: 95%;
-    }
+.cardVideo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
+}
+
+
+.cardV1 img,
+.cardV2 img,
+.cardV3 img,
+.cardV4 img {
+  /*  width: 100%;*/
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
+
+.cardV1:hover,
+.cardV2:hover,
+.cardV3:hover,
+.cardV4:hover {
+   /* transform: scale(1.02);*/
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+
 
 @media screen and (min-width: 700px) {
     :root {
@@ -125,6 +150,10 @@
         width: 600px;
     }
 }
+
+
+
+
 
 @media screen and (min-width: 1501px) {
     :root {
@@ -356,33 +385,55 @@ button {
 .card2,
 .card3,
 .card4 {
-    min-width: 345px;
-    height: 109px;
-    background: #101010;
-    border: 0.5px solid #4E4E4E;
-    border-radius: 20px;
-    padding: 10px 0px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  min-width: 345px;
+  height: 109px;
+  background: #101010;
+  border: 0.5px solid #4E4E4E;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* <<< alinhamento à esquerda */
+  gap: 15px;
+  overflow: hidden;
 }
 
 .card1:hover,
 .card2:hover,
 .card3:hover,
 .card4:hover {
-    box-shadow: 7px 5px 56px -14px #202020;
+  box-shadow: 7px 5px 56px -14px #202020;
 }
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+  width: 80px;         /* tamanho fixo para evitar distorção */
+  height: 80px;
+  object-fit: cover;   /* mantém o corte proporcional */
+  border-radius: 12px;
+  flex-shrink: 0;      /* evita que a imagem seja comprimida */
+}
+
 
 .textsCards p {
     width: 100px;
 }
 
 .tituloCard {
-    font-weight: 700;
-    font-size: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;         /* limite de 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 2.8em;              /* controle de altura para 2 linhas */
+  line-height: 1.4em;
 }
 
 .paragrafoCard {
@@ -540,3 +591,14 @@ iframe {
   font-size: 24px;
   cursor: pointer;
 }
+
+
+#playBtn, #pauseBtn {
+  color: white;
+  transition: transform 0.2s;
+}
+#playBtn:hover, #pauseBtn:hover {
+  transform: scale(1.1);
+}
+
+
