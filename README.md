@@ -54,4 +54,4 @@ amor-em-cancoes/
 ├── style.css             # Estilos da página
 ├── main.js               # Scripts para interações
 ├── README.md             # Documentação do projeto
-└── screenshots/          # Capturas de tela do projeto (opcional)
+└── screenshots/          # Capturas de tela do projeto
