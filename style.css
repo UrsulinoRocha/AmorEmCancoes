@@ -183,13 +183,10 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-  background-image: url('./img/sua-imagem.jpg'); /* caminho da imagem */
-  background-size: cover;        /* cobre toda a tela */
-  background-position: center;   /* centraliza a imagem */
-  background-repeat: no-repeat;  /* impede repetição */
-  background-attachment: fixed;  /* efeito parallax (opcional) */
-
-  
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media (max-width: 600px) {
@@ -211,7 +208,7 @@ main {
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
-    /* height: 100vh; */
+     height: 100vh;
 }
 
 button {
